@@ -1,0 +1,28 @@
+import 'package:drawer/commons/collapsing_navigation_drawer_widget.dart';
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  // This widget is the root of your application.
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Flutter Demo',
+
+      home:Stack(
+        children: <Widget>[
+
+          Container(
+            color: Colors.white,
+          ),
+          CollapsingNavigationDrawer(),
+        ],
+      )
+    );
+  }
+}
+
+
